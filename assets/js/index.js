@@ -22,7 +22,6 @@ function getUserInfo() {
             if (res.status !== 0) {
                 return layui.layer.msg('获取用户信息失败')
             }
-            console.log(res);
             renderAvatar(res.data)
         },
         //无论成功还是失败，都会掉用complete回调函数,把该段代码放进prefilter中ß
